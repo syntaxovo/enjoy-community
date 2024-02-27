@@ -1,0 +1,12 @@
+<view class="room">
+  <van-cell-group border="{{false}}">
+    <van-cell
+      wx:for="{{rooms}}"
+      wx:key="item"
+      title="{{point}}{{building}}{{item}}"
+      mark:room="{{item}}"
+      bind:tap="goForm"
+      is-link
+    />
+  </van-cell-group>
+</view>
